@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=ISO-8859-1" />
+    <title>Cassini Spacecraft Events and Configuration Information</title>
+    <link href="main_cass.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="main_cass_additions.css" type="text/css" rel="stylesheet" media="all" />
+    <script src="https://pds-atmospheres.nmsu.edu/atmospage_files/jquery-1.js" type="text/javascript"></script>
+    <script src="https://pds-atmospheres.nmsu.edu/atmospage_files/email.js" type="text/javascript"></script>
+    <script type="text/javascript">
+$(fixEmail);
+</script> <link href="https://pds.nasa.gov/pds-app-bar/pds-app-bar.css" type="text/css" rel="stylesheet"><link href="https://pds.nasa.gov/pds-app-bar/pds-app-bar.css" type="text/css" rel="stylesheet"><script src="https://pds.nasa.gov/pds-app-bar/pds-app-bar.js" type="text/javascript"></script></head>
+  <body class="sidebar home menu_home menu_item_">
+    <div id="header">
+      <div class="nonvisual">
+        <h2>Menu: Skip within this page</h2>
+        <ul>
+          <li><a href="#mainContent">Skip to main content</a></li>
+          <li><a href="#mainMenu">Skip to menu</a></li>
+        </ul>
+      </div>
+      <p id="logo"> <a href="https://pds.nasa.gov" onclick="this.blur()"><img src="https://pds-atmospheres.nmsu.edu/atmospage_files/nasa-logo.gif"
+
+            alt="NASA logo" width="60" height="50" border="0" />&nbsp;PDS: The
+          Planetary Atmospheres Node</a><!--<span style="position: relative; left: -3em; bottom: -1em; color: rgb(255, 51, 51); font-size: 90%; font-family: 'Arial Black';">BETA</span>-->
+      </p>
+      <form id="dummyForm" action="/" method="get"></form>
+      <script type="text/javascript">
+
+function setSearchAction(form, actionSelector) {
+
+var baseAction = document.getElementById("dummyForm").action;
+
+form.action = baseAction + actionSelector.value;
+
+return true;
+
+}
+
+</script> <form id="search" action="http://atmos.nmsu.edu:8080/search-0.1-dev/search_by_keyword"
+
+        method="get" enctype="application/x-www-form-urlencoded"> <input name="q"
+
+          value="" type="hidden" /> <input name="facet" value="" type="hidden" />
+        <input name="in" value="all" type="hidden" />
+        <p><label for="searchPhrase">Search for:</label><br />
+          <input id="searchPhrase" class="text" size="30" name="DATA_SET" type="text" />
+          <input class="submit" value="Go" type="submit" /><br />
+
+<!--
+
+<label for="searchScope">in</label>
+
+<select id="searchScope" name="search_scope">
+
+<option value="app1/pds/index.jsp ">PDS data</option>
+
+<option id="pds_phone_book" value="about/phonebook.cfm">PDS phone book</option>
+
+<option id="data_dictionary_lookup" value="tools/data_dictionary_lookup.cfm">PDS Data Dictionary</option>
+
+<option id="reference_lookup" value="tools/reference_lookup.cfm">References</option>
+
+</select>-->
+
+</p>
+
+</form>
+
+
+<h2 class="nonvisual">Menu: Help Links</h2>
+
+<ul id="nasaLinks">
+
+<li><a href="https://www.nasa.gov/">NASA Portal</a></li>
+
+
+
+</ul>
+
+
+<div class="clear"></div>
+
+
+</div>
+
+
+
+<!-- Main menu -->
+
+
+<div id="menu">
+
+
+<a class="nonvisual" name="mainMenu"></a>
+
+
+<h2 class="nonvisual">Main menu</h2>
+
+<ul>
+
+<li id="home"><a href="https://pds-atmospheres.nmsu.edu/">Home</a></li>
+
+<li id="about"><a href="https://pds-atmospheres.nmsu.edu/about_t_node/about_t_node.htm">About Us</a></li>
+
+<li id="data"><a href="https://pds-atmospheres.nmsu.edu/data_and_services/data_and_services.htm">Data and Services</a></li>
+
+<li id="education"><a href="https://pds-atmospheres.nmsu.edu/education_and_outreach/education_and_outreach.htm">Education</a></li>
+
+<li id="contact"><a href="https://pds-atmospheres.nmsu.edu/contact_us/contact_us.htm">Contact Us</a></li>
+
+
+
+<li id="external"><a href="https://pds-atmospheres.nmsu.edu/other_i_sites/other_i_sites.htm">External Links</a></li>
+
+
+</ul>
+
+
+<div class="clear"></div>
+
+</div>
+
+
+
+<div id="submenu">
+
+
+<!-- <ul id="submenu_andards"><li>&nbsp;</li></ul> -->
+
+
+</div>
+
+
+<!-- Sidebar -->
+
+
+<div id="sidebar">
+
+  <div class="sidebarSection">
+  <details>
+  <summary class="nav">
+  PDS Nodes
+  </summary>
+  <ul>
+
+  <li><a href="https://pds.nasa.gov/">PDS</a></li>
+
+  <li><a href="https://pds-atmospheres.nmsu.edu/">Atmospheres</a></li>
+
+  <li><a href="https://pds-geosciences.wustl.edu/">Geosciences</a></li>
+
+  <li><a href="https://pds-imaging.jpl.nasa.gov/">Cartography and Imaging</a></li>
+
+  <li><a href="https://naif.jpl.nasa.gov/naif/">Navigational &amp; Ancilliary Information&nbsp;(NAIF)</a></li>
+
+  <li><a href="http://pds-ppi.igpp.ucla.edu/">Planetary Plasma Interactions&nbsp;(PPI)</a></li>
+
+  <li><a href="https://pds-rings.seti.org/">Ring-Moon Systems</a></li>
+
+  <li><a href="https://pds-smallbodies.astro.umd.edu/">Small Bodies</a></li>
+
+  </ul>
+  </details>
+  </div>
+
+  <div class="sidebarSection">
+  <details>
+  <summary class="nav">
+  PDS Support
+  </summary>
+
+  <ul>
+
+  <li><a href="https://pdsmgmt.gsfc.nasa.gov/">Management</a></li>
+
+  <li><a href="https://pds-engineering.jpl.nasa.gov/">Engineering</a></li>
+  <li><a href="https://pds.jpl.nasa.gov/tools/tool-registry/">PDS Tools</a></li>
+
+
+  </ul>
+  </details>
+  </div>
+
+
+<!-- Cassini home sidebar link -->
+<div class="sidebarSection2">
+
+<h2>Cassini Archive Home</h2>
+
+
+<ul>
+<li><a href="Cassini.html">Cassini Home</a></li>
+<li><br /></li>
+<li><a href="act-find.html">Common Resources &amp; Tools</a></li>
+<li><a href="eng-overview.html">Spacecraft Events &amp; Info</a></li>
+<li><a href="global-contact.html">PDS Cassini Contact Page</a></li>
+</ul>
+
+</div>
+
+    <!-- Instrument sidebar -->
+
+	<div class="sidebarSection2">
+		<h2>Cassini Instruments</h2>
+
+		<ul>
+		<li><a href="instruments.html">Instrument Comparison</a></li>
+		<li><br /></li>
+		<li>Optical Remote Imaging:</li>
+		<li><a href="inst-cirs.html">CIRS</a></li>
+		<li><a href="inst-iss.html">ISS</a></li>
+		<li><a href="inst-uvis.html">UVIS</a></li>
+		<li><a href="inst-vims.html">VIMS</a></li>
+		<li><br /></li>
+		<li>Radio Instruments:</li>
+		<li><a href="inst-radar.html">RADAR</a></li>
+		<li><a href="inst-rss.html">RSS</a></li>
+		<li><br /></li>
+		<li>Fields and Particles:</li>
+		<li><a href="inst-caps.html">CAPS</a></li>
+		<li><a href="inst-cda.html">CDA</a></li>
+		<li><a href="inst-inms.html">INMS</a></li>
+		<li><a href="inst-mag.html">MAG</a></li>
+		<li><a href="inst-mimi.html">MIMI</a></li>
+		<li><a href="inst-rpws.html">RPWS</a></li>
+		<li><br /></li>
+		<li>Probe:</li>
+		<li><a href="https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/Huygens/Huygens.html">Huygens Lander</a></li>
+		</ul>
+	</div>
+
+	<div class="sidebarSection2">
+		<h2>Science Areas</h2>
+		<ul>
+		<li><a href="sci-mission.html">Mission Science Overview</a></li>
+		<li><br /></li>
+		<li><a href="sci-saturn.html">Saturn Planet &amp; Atmosphere</a></li>
+		<li><a href="sci-rings.html">Saturn's Rings</a></li>
+		<li><a href="sci-fp.html">Magnetospheric Science</a></li>
+		<li><a href="sci-titan.html">Titan</a></li>
+		<!--<li><a href="sci-enceladus.html">Enceladus</a></li>-->
+		<li><a href="sci-icy.html">Icy Satellites &amp; Other Moons</a></li>
+		<li><a href="sci-jupiter.html">Jupiter</a></li>
+		</ul>
+	</div>
+
+<div class="sidebarSection2">
+      <h2>Cassini Search Tools</h2>
+    <ul>
+<li><a href="EventCalendar/prototype.html">Event Calendar</a></li>
+<li><a href="https://trek.nasa.gov/titan/">Titan Trek</a></li>
+<li><a href="https://pds-imaging.jpl.nasa.gov/search/">PDS Imaging Atlas</a></li>
+<li><a href="http://pds-rings-tools.seti.org/opus/#/view=search&amp;browse=gallery&amp;colls_browse=gallery&amp;page=1&amp;gallery_data_viewer=true&amp;limit=100&amp;order=timesec1&amp;cols=ringobsid,planet,target,phase1,time1,time2&amp;widgets=planet,target&amp;widgets2=&amp;detail=">OPUS</a></li>
+<li><a href="https://wgc.jpl.nasa.gov:8443/webgeocalc/#NewCalculation">SPICE Geometry Calculator</a></li>
+</ul>
+    </div>
+ <div class="sticky">
+    <div style="text-align: right;">
+    <a href="#othercontent">Scroll to top &#8593;</a>
+    </div>
+
+  </div> <!-- end sticky part -->
+      <!--
+<div class="sidebarSection2"><ul>
+<li><a href="jupiter_obs.html">Jupiter</a></li><li><a href="rings_obs.html">Rings</a></li>
+<li><a href="io_obs.html">Io</a></li><li><a href="europa.html">Europa</a></li>
+<li><a href="ganymede.html">Ganymede</a></li><li><a href="callisto.html">Callisto</a></li>
+<li><a href="cassini.html">Main Page</a></li></ul>
+</div>-->
+    </div>
+
+    <!-- Main content -->
+    <div id="othercontent"> <a name="mainContent"></a>
+      <div id="leftothercontent">
+        <div class="sidebarsection">
+          <h2>&nbsp;</h2>
+        </div>
+        <br />
+        <h1>Cassini Spacecraft Events and Configuration Information</h1>
+        <!-- main content begin -->
+        <div id="leftothercontenttext">
+          <div id="casslogo"> <img src="images/eng.jpg" width="100%" align="left" />
+            <center><small>This still is from an <a href="https://saturn.jpl.nasa.gov/the-journey/the-spacecraft/">
+                  interactive 3D model</a> that includes information on Cassini
+                and all of its instruments.</small></center>
+          </div>
+          <div class="center">
+            <h2>On this page:</h2>
+            <ul class="plainlist">
+              <li><a class="ipstickynav" href="#noise">Spacecraft Noise Sources</a></li>
+              <li><a class="ipstickynav" href="#config">Spacecraft Configuration Information</a></li>
+              <li><a class="ipstickynav" href="#nav">Navigation Information</a></li>
+              <li><a class="ipstickynav" href="#gapreport">Gap Report</a></li>
+            </ul>
+          </div>
+         <a name="noise"></a>
+            <h2 class="section-head">Spacecraft Noise Sources</h2>
+             Certain spacecraft events affected how Cassini gathered science data.
+             For example, many of these events generated noise that affected the
+             ability of the instruments on the spacecraft to properly collect science data.
+             In addition, other events required that some of the instruments be
+             turned off for the duration of the event. Finally, a third set of events, such as
+             a change in the mass of the spacecraft, impacts data analysis. Below
+             are the various noise sources and spacecraft events that have bearing on
+             finding and analyzing science data.
+            <!--<div class="paragraph">
+              <h3 class="lfa"><a href="#TODO:M-06">CAPS Articulation Periods</a></h3>
+            </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="#TODO:M-06">CDA Articulation Periods</a></h3>
+            </div>-->
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/CASSINI_MAG_SCAS_TIMES.txt">MAG Science Calibration Subsystem (SCAS) Sensor Alignment Determination [TXT]</a></h3>
+              The orientation of the magnetometer sensors with respect to the
+              spacecraft may change slightly after events such as spacecraft
+              maneuvers or as the thermal environment changes with distance from
+              the sun. The SCAS is a means of determining the magnetometer
+              sensor alignment.<br />
+              See the <a href="Cassini/DOCS for events & Configuration page/README_mag_scas.txt">README</a>
+              for more information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES">MIMI
+                  INCA Discharges</a></h3>
+              These discharges do not appear to have any measurable effect on
+              the quality of the MIMI science data. They do, however, result in
+              interference in the RPWS plasma wave data.<br />
+              <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_1999.txt">1999</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2000.txt">2000</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2001.txt">2001</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2002.txt">2002</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2003.txt">2003</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2004.txt">2004</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2005.txt">2005</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2006.txt">2006</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2007.txt">2007</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2008.txt">2008</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2009.txt">2009</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2010.txt">2010</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2011.txt">2011</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2012.txt">2012</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2013.txt">2013</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2014.txt">2014</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2015.txt">2015</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2016.txt">2016</a>
+               <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/MIMI_INCA_Discharges_2017.txt">2017</a><br />
+              See the <a href="Cassini/DOCS for events & Configuration page/MIMI_INCA_DISCHARGES/README_MIMI_INCA_Discharge.txt">README</a>
+              for more information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/rpws_snd_times_2004_2017.txt">RPWS
+                  Sounder Firings [TXT]</a></h3>
+              This deliberate electromagnetic signal may interfere with other
+              science observations. Specifically, CDA may misinterpret a sounder
+              pulse as a dust detection. <br />
+              See the <a href="Cassini/DOCS for events & Configuration page/README_rpws_snd_times_2004_2017.txt">README</a>
+              for more information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/cassini_mea_rcs_burns.pdf">Main
+                  Engine Burns and Thruster Firings [PDF]</a></h3>
+
+              See the <a href="Cassini/DOCS for events & Configuration page/README_MEA_RCS_BURNS.txt">README</a>
+              for more information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_overview_171107.txt">Bus
+                  Imbalance Changes</a></h3>
+              <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_plots_171107.pdf">Plots
+                [PDF]</a> <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_plots_171107_orig.pptx">[PPTX]</a>
+              <br />
+              <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/ALL_bus_imbalance_data.pdf">All
+                Data [PDF]</a> <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/ALL_bus_imbalance_data_orig.xlsx">[XLSX]</a>
+              <br />
+              Tab-Delimited Data:<br />
+              <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2003-225.txt">2003-225</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2004-183.txt">2004-183</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2004-363.txt">2004-363</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2005-007.txt">2005-007</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2005-010.txt">2005-010</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2006-179.txt">2006-179</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2006-265.txt">2006-265</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2006-267.txt">2006-267</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2011-120.txt">2011-120</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2011-162.txt">2011-162</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2011-166.txt">2011-166</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2012-080.txt">2012-080</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2012-153.txt">2012-153</a>
+               <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/bus_imbalance_data_2012-154.txt">2012-154</a>
+              <br />
+              See the <a href="Cassini/DOCS for events & Configuration page/BUS_IMBALANCE/README_bus_imbalance.txt">README</a>
+              for more information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/SSPS_TRIPS_ChartOnly_161115.pdf">Solid State Power Switch Trips [PDF]</a> <a href="Cassini/DOCS for events & Configuration page/SSPS_TRIPS_ChartOnly_161115.xlsx">[XLSX]</a></h3>
+
+            <!--See the <a href="#TODO:M-06">README</a> for more information. </div>-->
+            <br />
+            <a name="config"></a>
+            <h2 class="section-head">Spacecraft Configuration Information</h2>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/S02_SOI_instrument_impacts.pdf">SOI
+                  Command Timeline [PDF]</a> <a href="Cassini/DOCS for events & Configuration page/S02_SOI_instrument_impacts.docx">[DOCX]</a></h3>
+
+            See the <a href="Cassini/DOCS for events & Configuration page/README_S02_SOI.txt"><span style="color: #006699;">README </span></a>for more
+              information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/S07_PRLY_instrument_impacts.pdf">Probe
+                  Release and Relay Command Timeline [PDF]</a> <a href="Cassini/DOCS for events & Configuration page/S07_PRLY_instrument_impacts.docx">[DOCX]</a></h3>
+
+              See the <a href="Cassini/DOCS for events & Configuration page/README_S07_PRLY.txt">README</a>
+              for more information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/MAIN_ENGINE_COVER_ACTUATION/12ps_mea_motr_a.txt">Main
+                  Engine Cover Actuations [TXT]</a> <a href="Cassini/DOCS for events & Configuration page/MAIN_ENGINE_COVER_ACTUATION/12ps_mea_motr_a.pdf">[PDF]</a>
+                <a href="Cassini/DOCS for events & Configuration page/MAIN_ENGINE_COVER_ACTUATION/12ps_mea_motr_a.xlsx">[XLSX]</a></h3>
+              There were 97.5 cover cycles during flight.<br />
+              See the <a href="Cassini/DOCS for events & Configuration page/MAIN_ENGINE_COVER_ACTUATION/README_MEC_ACTUATION.txt">README</a>
+              for more information. </div>
+            <!--<div class="paragraph">
+              <h3 class="lfa"><a href="#TODO:M-06">RWA Rates and Accelerations</a></h3>
+            </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="#TODO:M-06">Rolling Spacecraft Periods</a></h3>
+            </div>-->
+            <div class="paragraph">
+              <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/Cassini_Proximal_Orbit_Mass.pdf">Proximal Orbit Spacecraft Mass History [PDF]</a> <a href="Cassini/DOCS for events & Configuration page/Cassini_Proximal_Orbit_Mass.xlsx">[XLSX]</a></h3>
+
+              See the <a href="Cassini/DOCS for events & Configuration page/README_PROX_MASS.txt">README</a>
+              for more information. </div>
+            <div class="paragraph">
+              <h3 class="lfa"><a href="files/Cassini Spacecraft Mass Table.xlsx">Full Mission Spacecraft Mass History [XLSX]</a>
+                <a href="files/Cassini Spacecraft Mass Table.csv">[CSV]</a></h3>
+
+              See the <a href="files/README for Cassini Spacecraft Mass table.txt">README</a>
+              for more information. </div>
+
+<a name="nav"></a>
+<div class="paragraph"><h2 class="section-head">Navigation Information</h2></div>
+
+<div class="paragraph">
+    <h3 class="lfa"><a href="Cassini/DOCS%20for%20events%20&%20Configuration%20page/TDM/">Doppler and Range Tracking Data</a></h3>
+This is the Doppler and range data used by the navigation team to determine Cassini’s orbit. TDM’s are text files formatted according to international standards.
+</div>
+<div class="paragraph">
+    <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/171030_180002-marge-eop.txt">Earth orientation parameters</a></h3>
+    This file describes a rotation from an Earth-fixed
+reference frame to an inertial reference frame. It is used to convert tracking station
+locations (Earth-fixed coordinates) into the 'radio' frame (inertial coordinates) needed
+to process Doppler and range measurements.
+</div>
+<div class="paragraph">
+    <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/Media">Media Calibrations</a></h3>
+    These files contain troposphere and ionosphere calibrations used to
+model the effect of Earth's atmosphere on Doppler and range measurements. They span
+Cassini's tour phase.
+</div>
+<div class="paragraph">
+    <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/FTS">DSN Interstation Clock Offsets</a></h3>
+    This file describes clock differences between DSN
+complexes during times when '3-way' Doppler tracking is acquired. It is used to calibrate
+Doppler measurements uplinked from one DSN complex and received at a different
+complex. The file also contains a few corrections to range measurements. In these
+instances, the file contains adjustments for range calibrations that were incorrectly
+reported on the Doppler and range tracking data file. The file spans Cassini's tour phase.
+</div>
+<div class="paragraph">
+    <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/Small Forces">Small Force History</a></h3>
+    This file contains a list of propulsive events required for attitude
+and articulation control management. It includes the time of the events and predicted
+delta-V's imparted to the spacecraft. It spans Cassini's tour phase.
+</div>
+<div class="paragraph">
+    <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/maneuver history.pdf">Maneuver History</a></h3>
+    This file contains a listing of all the trajectory correction and orbit trim
+maneuvers performed by Cassini. It provides maneuver times and delta-V magnitudes.
+</div>
+
+ <a name="gapreport"></a>
+<h2 class="section-head">Gap Report</h2>
+<div class="paragraph">
+Many tables provided on this site are "as-planned", meaning that they represent the initial science-planning time tables. For various reasons,
+data might not be delivered even though an observation was planned. For example, weather conditions at the Deep Space Network may have
+blocked communications during downlink, and data would therefore be lost. The gap reports below describe these time periods when data was
+either not gathered or was lost.  If an observation that you are expecting to find has "gone missing", this can help explain the reason why.
+</div>
+
+
+<div class="paragraph">
+  <h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/5_Minute_Science_Gaps.txt">Full Mission Gap Report, 5 minute [TXT]</a> <a href="Cassini/DOCS for events & Configuration page/5_Minute_Science_Gaps_README.txt">[README]</a></h3>
+
+<h3 class="lfa"><a href="Cassini/DOCS for events & Configuration page/Full_Tour_Pkt_Gap_Report.txt">Full Mission Gap Report, by Packet Type [TXT]</a> <a href="logs/Full Tour Science Packet Gap Report.pdf">[README]</a></h3>
+<!--
+<h3 class="lfa"><a href="https://cassini.jpl.nasa.gov/sp/titan/legacy2/docs/TOST_XM_Data_Usage_FULL_180110.xls">Data Utilization per Mission Phase: Prime</a>,
+  <a href="https://cassini.jpl.nasa.gov/sp/titan/legacy2/docs/TOST_XM_Data_Usage_FULL_180110.xls">XM</a>, <a href="#TODO">XXM<br /></a></h3>-->
+          </div>
+
+<div class ="cassiniContact">
+<hr>
+For questions and comments, visit the <a href="global-contact.html">PDS Cassini Contact Page</a>
+</div>
+
+          <!-- main content end --> </div>
+      </div>
+    </div>
+    <!-- InanceEndEditable -->
+    <div id="footer" style="color: black; background: #CCCCCC; vertical-align: middle;">
+      <a href="https://www.nasa.gov/"><img class="left" src="https://pds-atmospheres.nmsu.edu/atmospage_files/usa-gov.gif"
+
+alt="Link to www.usa.gov" border="0" /></a>
+      <p class="left">
+        <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy</a>
+        / <a href="http://www.jpl.nasa.gov/imagepolicy/">Copyright</a><br />
+        <a href="http://www.hq.nasa.gov/office/pao/FOIA/">Freedom of Information
+          Act</a>
+      </p>
+      <p class="right">
+        Curator: <a href="mailto:lhuber@nmsu.edu">Lyle Huber</a><br />
+        NASA Official: <a href="mailto:nchanove@nmsu.edu">Nancy Chanover</a><br />
+        Last updated:
+        <script>
+
+document.write(laMod());
+
+</script></p>
+      <img class="right" src="https://pds-atmospheres.nmsu.edu/atmospage_files/nasa-logo-small.gif"
+
+alt="Small NASA logo" />
+      <div style="clear: both;"></div>
+    </div>
+    <!--[if IE]>
+</div>
+<![endif]-->
+    <!-- InanceEnd -->
+</body></html>
